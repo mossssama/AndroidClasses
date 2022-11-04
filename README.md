@@ -3,12 +3,13 @@ AndroidJavaClasses<a name="TOP"></a>
 
 - - - - 
 # SharedPreferences #
+Write the following inside the class you want to used sharedPreferences in it
 
-    Markup :  # Heading 1 #
+    SINGLETON_SharedPref.init(getContext());
 
-    -OR-
+Then use its functions directly using classes name
 
-    Markup :  ============= (below H1 text)
+    SINGLETON_SharedPref.write("Mohamed Osama","Best Engineer");
     
 # To Be Continued #
 
