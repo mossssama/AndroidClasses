@@ -20,14 +20,23 @@ Shared Preferences: is key-value pair storage
 and so on
 
 # SQLiteDatabase #
-Write the following inside the class you want to use  in it
+[1] Write the following inside the class you want to use SQLiteDatabase in it
 
-    SINGLETON_SharedPref.init(getContext());
+    DBHelper dbHelper=new DBHelper(getApplicationContext());
+    ClassModel recordOne = new ClassModel(clmOneData,clmTwoData);
+    
+[2] Use classModel instances as an input parameters to the SQLite DBHelper
 
-Then use its functions directly by using class name
+    ClassModel recordOne = new ClassModel(clmOneData,clmTwoData);
+    dbHelper.addRecord(recordOne);
+    
+OR    
+   
+    dbHelper.addRecord(new ClassModel(clmOneData,clmTwoData));
+    
+[3] Use any function inside DBHelper using dbHelper instance
 
-    SINGLETON_SharedPref.write("Mohamed Osama","Best Engineer");
-    SINGLETON_SharedPref.remove("Mohamed Osama");
+    dbHelper.getColumn(1);
     
 and so on
 
