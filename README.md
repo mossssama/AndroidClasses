@@ -1,5 +1,6 @@
 AndroidJavaClasses<a name="TOP"></a>
 ===================
+For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 
 - - - - 
 # SharedPreferences #
