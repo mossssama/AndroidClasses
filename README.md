@@ -3,7 +3,7 @@ AndroidJavaClasses<a name="TOP"></a>
 For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 
 - - - - 
-# SharedPreferences #
+# 1. SharedPreferences #
 **Shared Preferences: is key-value pair storage**
 - Used to store user-specified configuration details, such as settings, and to keep the user logged in to the app.
 - Used to store small amount of data which doesn’t require any specific structure.
@@ -20,7 +20,7 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 and so on
 
 <br/><br/>
-# SQLiteDatabase #
+# 2. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] Write the following inside the class you want to use SQLiteDatabase in it
