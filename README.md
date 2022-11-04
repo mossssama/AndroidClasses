@@ -21,6 +21,8 @@ and so on
 
 <br/><br/>
 # SQLiteDatabase #
+SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language
+
 [1] Write the following inside the class you want to use SQLiteDatabase in it
 
     DBHelper dbHelper=new DBHelper(getApplicationContext());
