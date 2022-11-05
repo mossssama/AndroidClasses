@@ -78,76 +78,8 @@ and so on
 
     </LinearLayout>
 <br/><br/>
-[3] Add the following RecyclerView Adapter class to your project directory
+[3] Add the RecyclerView Adapter class to your project directory
 
-    import android.content.Context;
-    import android.view.LayoutInflater;
-    import android.view.View;
-    import android.view.ViewGroup;
-    import android.widget.TextView;
-
-    import androidx.recyclerview.widget.RecyclerView;
-
-    import java.util.List;
-
-    public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-
-        private List<String> mData;
-        private LayoutInflater mInflater;
-        private ItemClickListener mClickListener;
-
-        // data is passed into the constructor
-        RecyclerViewAdapter(Context context, List<String> data) {
-            this.mInflater = LayoutInflater.from(context);
-            this.mData = data;
-        }
-
-        // inflates the row layout from xml when needed
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = mInflater.inflate(R.layout.recyclerview_item, parent, false);
-            return new ViewHolder(view);
-        }
-
-        // binds the data to the rvItemContent in each row
-        @Override
-        public void onBindViewHolder(ViewHolder holder, int position) {
-            String animal = mData.get(position);
-            holder.rvItemContent.setText(animal);
-        }
-
-        // total number of rows
-        @Override
-        public int getItemCount() {return mData.size();}
-
-
-        // stores and recycles views as they are scrolled off screen
-        public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-            TextView rvItemContent;
-
-            ViewHolder(View itemView) {
-                super(itemView);
-                rvItemContent = itemView.findViewById(R.id.textViewID);
-                itemView.setOnClickListener(this);
-            }
-
-            @Override
-            public void onClick(View view) {
-                if (mClickListener != null) mClickListener.onItemClick(view, getAdapterPosition());
-            }
-        }
-
-        // convenience method for getting data at click position
-        String getItem(int id) {return mData.get(id);}
-
-        // allows clicks events to be caught
-        void setClickListener(ItemClickListener itemClickListener) {this.mClickListener = itemClickListener;}
-
-        // parent activity will implement this method to respond to click events
-        public interface ItemClickListener {
-            void onItemClick(View view, int position);
-        }
-    }
 <br/><br/>
 **At the class which it's layout contains the recyclerView widget; do number 4,5,6**
 <br><br/>
@@ -164,10 +96,10 @@ and so on
     }
     
 <br/><br/>
-## Put the data you want to fill the recyclerView with in an array; 
+[5] Put the data you want to fill the recyclerView with in an array; 
     Hint: here we used the array as the dataSource in the previous recyclerViewInit function
     
-### Populate using an array directly
+[5.1] Populate using an array directly
 
     ArrayList arr = new ArrayList<String>();
     arr.add("Horse");   arr.add("Cow"); arr.add("Camel");   arr.add("Sheep");   arr.add("Goat");
@@ -175,7 +107,7 @@ and so on
          
 OR  
     
-### Using SharedPrefs
+[5.2] Using SharedPrefs
     
     SharedPrefSingleton.init(getApplicationContext());
     SharedPrefSingleton.write("0","Horse"); SharedPrefSingleton.write("1","Cow");   SharedPrefSingleton.write("2","Camel");
@@ -184,7 +116,7 @@ OR
 
 OR  
     
-### return all rows from database inform of array; previous SQLite class contains returning rows inform of array
+[5.3] return all rows from database inform of array; previous SQLite class contains returning rows inform of array
     
     DBHelper dbHelper=new DBHelper(getApplicationContext());
     dbHelper.addRecord(new ClassModel(1,"mohamed"));
