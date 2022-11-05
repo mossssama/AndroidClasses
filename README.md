@@ -174,6 +174,7 @@ and so on
     arr.add("Horse");   arr.add("Cow"); arr.add("Camel");   arr.add("Sheep");
          
 OR  
+    
 2. Using SharedPrefs
     
     SharedPrefSingleton.init(getApplicationContext());
@@ -182,6 +183,7 @@ OR
     ArrayList arr = SharedPrefSingleton.readAll();
 
 OR  
+    
 3. return all rows from database inform of array; previous SQLite class contains returning rows inform of array
     
     DBHelper dbHelper=new DBHelper(getApplicationContext());
