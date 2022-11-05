@@ -149,7 +149,8 @@ and so on
         }
     }
 <br/><br/>
-**At the class which it's layout contains the recyclerView widget; do the following do number 4,5,6**
+**At the class which it's layout contains the recyclerView widget; do number 4,5,6**
+<br><br/>
 [4] Add the following function to the class which it's layout contains the recyclerView widget
     Here in our example is MainActivity.class
 
@@ -161,17 +162,20 @@ and so on
         adapter.setClickListener(click);
         rv.setAdapter(adapter);
     }
+    
 <br/><br/>
 [5] Put the data you want to fill the recyclerView with in an array; 
     Hint: here we used the array as the dataSource in the previous recyclerViewInit function
     
 1. Populate using an array directly
+
     ArrayList arr = new ArrayList<String>();
     arr.add("Horse");   arr.add("Cow"); arr.add("Camel");   arr.add("Sheep");   arr.add("Goat");
     arr.add("Horse");   arr.add("Cow"); arr.add("Camel");   arr.add("Sheep");
          
 OR  
 2. Using SharedPrefs
+    
     SharedPrefSingleton.init(getApplicationContext());
     SharedPrefSingleton.write("0","Horse"); SharedPrefSingleton.write("1","Cow");   SharedPrefSingleton.write("2","Camel");
     SharedPrefSingleton.write("3","Sheep"); SharedPrefSingleton.write("4","Goat");  SharedPrefSingleton.write("5","Horse");
@@ -179,6 +183,7 @@ OR
 
 OR  
 3. return all rows from database inform of array; previous SQLite class contains returning rows inform of array
+    
     DBHelper dbHelper=new DBHelper(getApplicationContext());
     dbHelper.addRecord(new ClassModel(1,"mohamed"));
     dbHelper.addRecord(new ClassModel(2,"m"));
@@ -186,6 +191,7 @@ OR
     ArrayList arr = dbHelper.getColumn(1);
     
 [6]. Call the recyclerViewInit function
+    
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
     
