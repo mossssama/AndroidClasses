@@ -164,10 +164,10 @@ and so on
     }
     
 <br/><br/>
-[5] Put the data you want to fill the recyclerView with in an array; 
+## Put the data you want to fill the recyclerView with in an array; 
     Hint: here we used the array as the dataSource in the previous recyclerViewInit function
     
-1. Populate using an array directly
+### Populate using an array directly
 
     ArrayList arr = new ArrayList<String>();
     arr.add("Horse");   arr.add("Cow"); arr.add("Camel");   arr.add("Sheep");   arr.add("Goat");
@@ -175,7 +175,7 @@ and so on
          
 OR  
     
-2. Using SharedPrefs
+### Using SharedPrefs
     
     SharedPrefSingleton.init(getApplicationContext());
     SharedPrefSingleton.write("0","Horse"); SharedPrefSingleton.write("1","Cow");   SharedPrefSingleton.write("2","Camel");
@@ -184,7 +184,7 @@ OR
 
 OR  
     
-3. return all rows from database inform of array; previous SQLite class contains returning rows inform of array
+### return all rows from database inform of array; previous SQLite class contains returning rows inform of array
     
     DBHelper dbHelper=new DBHelper(getApplicationContext());
     dbHelper.addRecord(new ClassModel(1,"mohamed"));
