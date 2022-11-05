@@ -45,7 +45,8 @@ and so on
 
 <br/><br/>
 # 3. RecyclerViewAdapter #
-**SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
+**RecyclerView : ViewGroup contains views corresponding to our data**
+**RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
 [1] Add a recyclerView widget to the xml file of an activity
     for example activity_main.xml
@@ -123,7 +124,8 @@ OR
     dbHelper.addRecord(new ClassModel(2,"m"));
     dbHelper.addRecord(new ClassModel(3,"messi"));
     ArrayList arr = dbHelper.getColumn(1);
-    
+
+<br/><br/>
 [6]. Call the recyclerViewInit function
     
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
