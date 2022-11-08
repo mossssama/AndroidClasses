@@ -132,12 +132,12 @@ OR
     
 <br/><br/>
 # 4. APIs #
-**API : WebService provided by remote servers & developed by backEnd developers**
+## PI : WebService provided by remote servers & developed by backEnd developers ##
 - They are set of methods/classes build in any scripting language & can be used without knowing their implementation
 - We needs agreement/protocol & key to use an API
 ## They are provided in different protocols & architectures as: ##
-Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
-Architectures: 1-REST 2-SOAP
+- Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
+- Architectures: 1-REST 2-SOAP
 <br/><br/>
 - App -FTP/SMTP/HTTP-> Server (API Request)
 - App <-XML/HTML/JSON- Server (API Response)
