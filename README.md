@@ -135,13 +135,13 @@ OR
 **API : WebService provided by remote servers & developed by backEnd developers**
 - They are set of methods/classes build in any scripting language & can be used without knowing their implementation
 - We needs agreement/protocol & key to use an API
-<br/><br/>
 ## They are provided in different protocols & architectures as: ##
 Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
 Architectures: 1-REST 2-SOAP
 <br/><br/>
 - App -FTP/SMTP/HTTP-> Server (API Request)
 - App <-XML/HTML/JSON- Server (API Response)
+
     |    vs    |    SOAP   |      REST     |
     |:--------:|:---------:|:-------------:|
     |  Request | HTTP/SMTP |      HTTP     |
@@ -156,7 +156,7 @@ Architectures: 1-REST 2-SOAP
     |    300->399   |        Redirects       |
     |    400->499   |      Client errors     |
     |    500->599   |      Server errors     |
-## APIs request must support Asynchronous code to get red of application stuck during waiting for API response ##<br/><br/>
+## APIs request must support Asynchronous code to get red of application stuck during waiting for API response ##
 We have two Android libraries supporting Asychronous code
 - Volley: official documented library
 - Retrofit: part of JetPack Compose;libraries & best practices revelead by Google in 2019
