@@ -150,7 +150,6 @@ Architectures: 1-REST 2-SOAP
     | Security |    High   |      Low      |
 <br/><br/>
 API response return with code (code & information in case of successful request) as the following
-   
     | Response Code |         Meaning        |
     |---------------|------------------------|
     |    100->199   | Informational response |
@@ -159,10 +158,10 @@ API response return with code (code & information in case of successful request)
     |    400->499   |      Client errors     |
     |    500->599   |      Server errors     |
 <br/><br/>
-APIs request must support Asynchronous code to get red of application stuck during waiting for API response
+APIs request must support Asynchronous code to get red of application stuck during waiting for API response<br/><br/>
 We have two Android libraries supporting Asychronous code
-1- Volley: official documented library
-2- Retrofit: part of JetPack Compose;libraries & best practices revelead by Google in 2019
+    1- Volley: official documented library
+    2- Retrofit: part of JetPack Compose;libraries & best practices revelead by Google in 2019
 
 ## prerequisites
 [1] Write the following dependencies in build.gradle
