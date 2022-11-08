@@ -150,14 +150,14 @@ Architectures: 1-REST 2-SOAP
     | Security |    High   |      Low      |
 <br/><br/>
 API response return with code (code & information in case of successful request) as the following
-    
-    |    vs    |      Code Meaning      |
-    |:--------:|:----------------------:|
-    | 100->199 | Informational response |
-    | 200->299 |   Successful response  |
-    | 300->399 |        Redirects       |
-    | 400->499 |      Client errors     |
-    | 500->599 |      Server errors     |
+<br/><br/>
+    |    Response Code    |      Code Meaning      |
+    |:-------------------:|:----------------------:|
+    |       100->199      | Informational response |
+    |       200->299      |   Successful response  |
+    |       300->399      |        Redirects       |
+    |       400->499      |      Client errors     |
+    |       500->599      |      Server errors     |
 <br/><br/>
 APIs request must support Asynchronous code to get red of application stuck during waiting for API response
 We have two Android libraries supporting Asychronous code
