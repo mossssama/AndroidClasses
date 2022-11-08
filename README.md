@@ -130,8 +130,85 @@ OR
     
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
-    
 <br/><br/>
+# 4. APIs #
+## PI : WebService provided by remote servers & developed by backEnd developers ##
+- They are set of methods/classes build in any scripting language & can be used without knowing their implementation
+- We needs agreement/protocol & key to use an API
+## They are provided in different protocols & architectures as: ##
+- Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
+- Architectures: 1-REST 2-SOAP
+<br/><br/>
+- App -FTP/SMTP/HTTP-> Server (API Request)
+- App <-XML/HTML/JSON- Server (API Response)
+
+    |    vs    |    SOAP   |      REST     |
+    |:--------:|:---------:|:-------------:|
+    |  Request | HTTP/SMTP |      HTTP     |
+    | Response |    XML    | XML/HTML/JSON |
+    | Security |    High   |      Low      |
+## API response return with code (code & information in case of successful request) as the following ##
+
+    | Response Code |         Meaning        |
+    |---------------|------------------------|
+    |    100->199   | Informational response |
+    |    200->299   |   Successful response  |
+    |    300->399   |        Redirects       |
+    |    400->499   |      Client errors     |
+    |    500->599   |      Server errors     |
+## APIs request must support Asynchronous code to get red of application stuck during waiting for API response ##
+We have two Android libraries supporting Asychronous code
+- Volley: official documented library
+- Retrofit: part of JetPack Compose;libraries & best practices revelead by Google in 2019
+
+## prerequisites
+[1] Write the following dependencies in build.gradle
+
+    // API doc: Dependency to use Retrofit Library(Gives Asynchronous network request)
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // API doc: Dependency to use GSON as notation while converting from JSON->POJO
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+[2] Write the following permissions in AndroidManifext.xml
+
+    <!-- Api doc: Permissions to use Internet & -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+[3] Paste the following after application tag in AndroidManifest.xml to allow using http along with https
+    
+    android:usesCleartextTraffic="true"
+<br/><br/>
+
+## In projects directory
+1. Put the SingletonRetrofitClient.java class in your project
+2. Put Api.java interface in your project
+3. Convert JSON response to POJO using [JSON->POJO](https://www.jsonschema2pojo.org/) & put the result java classes in your project
+
+4. Put the following in the activity class you want to use an API in it
+
+
+     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse(); 
+    
+     callDynamicVerse.enqueue(new Callback<Verse>() {
+    
+        @Override
+        public void onResponse(Call<Verse> call, Response<Verse> response) {
+            Verse verse= response.body();
+            String verseString= verse.getData().getText();
+            String verseSurah= verse.getData().getSurah().getName();
+            tvAyah.setText(verseString);
+            tvSurah.setText(verseSurah);
+        }
+
+        @Override
+        public void onFailure(Call<Verse> call, Throwable t) {
+            tvAyah.setText("Ahhh");
+            Log.d("ahhhhhhhhhhhhhhhhhhh","");
+        }
+    
+    });
+<br/><br/>
+    
 # To Be Continued #
 
     Stay Tuned
