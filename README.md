@@ -136,7 +136,7 @@ OR
 - They are set of methods/classes build in any scripting language & can be used without knowing their implementation
 - We needs agreement/protocol & key to use an API
 <br/><br/>
-# They are provided in different protocols & architectures as: #
+## They are provided in different protocols & architectures as: ##
 Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
 Architectures: 1-REST 2-SOAP
 <br/><br/>
@@ -149,7 +149,7 @@ Architectures: 1-REST 2-SOAP
     | Response |    XML    | XML/HTML/JSON |
     | Security |    High   |      Low      |
 <br/><br/>
-# API response return with code (code & information in case of successful request) as the following #
+## API response return with code (code & information in case of successful request) as the following ##
 
     | Response Code |         Meaning        |
     |---------------|------------------------|
@@ -159,7 +159,7 @@ Architectures: 1-REST 2-SOAP
     |    400->499   |      Client errors     |
     |    500->599   |      Server errors     |
 <br/><br/>
-# APIs request must support Asynchronous code to get red of application stuck during waiting for API response #<br/><br/>
+## APIs request must support Asynchronous code to get red of application stuck during waiting for API response ##<br/><br/>
 We have two Android libraries supporting Asychronous code
 - Volley: official documented library
 - Retrofit: part of JetPack Compose;libraries & best practices revelead by Google in 2019
