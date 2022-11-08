@@ -185,8 +185,9 @@ We have two Android libraries supporting Asychronous code
 3. Convert JSON response to POJO using [JSON->POJO](https://www.jsonschema2pojo.org/) & put the result java classes in your project
 4. Put the following in the activity class you want to use an API in it
 
-    Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse();
-    callDynamicVerse.enqueue(new Callback<Verse>() {
+     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse();
+    
+     callDynamicVerse.enqueue(new Callback<Verse>() {
     
                     @Override
                     public void onResponse(Call<Verse> call, Response<Verse> response) {
