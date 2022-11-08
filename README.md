@@ -186,7 +186,8 @@ We have two Android libraries supporting Asychronous code
 
 4. Put the following in the activity class you want to use an API in it
 
-     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse();    
+    '''
+     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse(); 
      callDynamicVerse.enqueue(new Callback<Verse>() 
                 {
     
@@ -205,6 +206,7 @@ We have two Android libraries supporting Asychronous code
                         Log.d("ahhhhhhhhhhhhhhhhhhh","");
                     }
                 });
+   '''
 <br/><br/>
     
 # To Be Continued #
