@@ -143,20 +143,20 @@ Architectures: 1-REST 2-SOAP
 App -FTP/SMTP/HTTP-> Server (API Request)
 App <-XML/HTML/JSON- Server (API Response)
 <br/><br/>
-|    vs    |    SOAP   |      REST     |
-|:--------:|:---------:|:-------------:|
-|  Request | HTTP/SMTP |      HTTP     |
-| Response |    XML    | XML/HTML/JSON |
-| Security |    High   |      Low      |
+    |    vs    |    SOAP   |      REST     |
+    |:--------:|:---------:|:-------------:|
+    |  Request | HTTP/SMTP |      HTTP     |
+    | Response |    XML    | XML/HTML/JSON |
+    | Security |    High   |      Low      |
 <br/><br/>
 API response return with code (code & information in case of successful request) as the following
-|    vs    |      Code Meaning      |
-|:--------:|:----------------------:|
-| 100->199 | Informational response |
-| 200->299 |   Successful response  |
-| 300->399 |        Redirects       |
-| 400->499 |      Client errors     |
-| 500->599 |      Server errors     |
+    |    vs    |      Code Meaning      |
+    |:--------:|:----------------------:|
+    | 100->199 | Informational response |
+    | 200->299 |   Successful response  |
+    | 300->399 |        Redirects       |
+    | 400->499 |      Client errors     |
+    | 500->599 |      Server errors     |
 <br/><br/>
 APIs request must support Asynchronous code to get red of application stuck during waiting for API response
 We have two Android libraries supporting Asychronous code
@@ -186,11 +186,10 @@ We have two Android libraries supporting Asychronous code
 ## In projects directory
 1. Put the SingletonRetrofitClient.java class in your project
 2. Put Api.java interface in your project
-3. Convert JSON response to POJO using (JSON->POJO)[https://www.jsonschema2pojo.org/] & put the result java classes in your project
+3. Convert JSON response to POJO using [JSON->POJO](https://www.jsonschema2pojo.org/) & put the result java classes in your project
 4. Put the following in the activity class you want to use an API in it
 
     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse();
-    
     callDynamicVerse.enqueue(new Callback<Verse>() {
                     @Override
                     public void onResponse(Call<Verse> call, Response<Verse> response) {
@@ -207,8 +206,8 @@ We have two Android libraries supporting Asychronous code
                         Log.d("ahhhhhhhhhhhhhhhhhhh","");
                     }
                 });
-                
 <br/><br/>
+    
 # To Be Continued #
 
     Stay Tuned
