@@ -140,8 +140,8 @@ They are provided in different protocols & architectures as:
 Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
 Architectures: 1-REST 2-SOAP
 <br/><br/>
-App -FTP/SMTP/HTTP-> Server (API Request)
-App <-XML/HTML/JSON- Server (API Response)
+- App -FTP/SMTP/HTTP-> Server (API Request)
+- App <-XML/HTML/JSON- Server (API Response)
 <br/><br/>
     |    vs    |    SOAP   |      REST     |
     |:--------:|:---------:|:-------------:|
@@ -150,6 +150,7 @@ App <-XML/HTML/JSON- Server (API Response)
     | Security |    High   |      Low      |
 <br/><br/>
 API response return with code (code & information in case of successful request) as the following
+    
     |    vs    |      Code Meaning      |
     |:--------:|:----------------------:|
     | 100->199 | Informational response |
