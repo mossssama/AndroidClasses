@@ -188,6 +188,7 @@ We have two Android libraries supporting Asychronous code
     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse();
     
     callDynamicVerse.enqueue(new Callback<Verse>() {
+    
                     @Override
                     public void onResponse(Call<Verse> call, Response<Verse> response) {
                         Verse verse= response.body();
