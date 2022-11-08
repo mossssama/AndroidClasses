@@ -196,6 +196,7 @@ We have two Android libraries supporting Asychronous code
                         tvAyah.setText(verseString);
                         tvSurah.setText(verseSurah);
                     }
+    
                     @Override
                     public void onFailure(Call<Verse> call, Throwable t) {
                         tvAyah.setText("Ahhh");
