@@ -150,7 +150,6 @@ Architectures: 1-REST 2-SOAP
     | Security |    High   |      Low      |
 <br/><br/>
 API response return with code (code & information in case of successful request) as the following
-<br/><br/>
     | Response Code |         Meaning        |
     |:-------------:|:----------------------:|
     |    100->199   | Informational response |
