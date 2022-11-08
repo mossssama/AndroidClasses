@@ -142,13 +142,11 @@ Architectures: 1-REST 2-SOAP
 <br/><br/>
 - App -FTP/SMTP/HTTP-> Server (API Request)
 - App <-XML/HTML/JSON- Server (API Response)
-<br/><br/>
     |    vs    |    SOAP   |      REST     |
     |:--------:|:---------:|:-------------:|
     |  Request | HTTP/SMTP |      HTTP     |
     | Response |    XML    | XML/HTML/JSON |
     | Security |    High   |      Low      |
-<br/><br/>
 ## API response return with code (code & information in case of successful request) as the following ##
 
     | Response Code |         Meaning        |
@@ -158,7 +156,6 @@ Architectures: 1-REST 2-SOAP
     |    300->399   |        Redirects       |
     |    400->499   |      Client errors     |
     |    500->599   |      Server errors     |
-<br/><br/>
 ## APIs request must support Asynchronous code to get red of application stuck during waiting for API response ##<br/><br/>
 We have two Android libraries supporting Asychronous code
 - Volley: official documented library
