@@ -217,9 +217,9 @@ We have two Android libraries supporting Asychronous code
     annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.5.1'
 
 [2] Put the RoomDatabase directory in your project directory
--   DAO is interface containg the main queries to be applied on your database   
--   RoomDB is a class to build the Room layer on SQLite; it contains your databaseName & the name of a other database to prepopulate your current database
--   ModelClass is a class representing a table in your Room Database
+-   **DAO** is interface containg the main queries to be applied on your database   
+-   **RoomDB** is a class to build the Room layer on SQLite; it specifies mainDB + populating DB
+-   **ModelClass** is a class representing a table in your Room Database
 - - - -
 # To Be Continued #
 
