@@ -19,7 +19,7 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
     
 and so on
 
-<br/><br/>
+- - - -
 # 2. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
@@ -42,8 +42,7 @@ OR
     dbHelper.getColumn(1);
     
 and so on
-
-<br/><br/>
+- - - -
 # 3. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
@@ -130,7 +129,7 @@ OR
     
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
-<br/><br/>
+- - - -
 # 4. APIs #
 ## PI : WebService provided by remote servers & developed by backEnd developers ##
 - They are set of methods/classes build in any scripting language & can be used without knowing their implementation
@@ -207,8 +206,12 @@ We have two Android libraries supporting Asychronous code
         }
     
     });
-<br/><br/>
-    
+
+- - - -
+# 5. Room Database #
+    To be filled
+
+- - - -
 # To Be Continued #
 
     Stay Tuned
