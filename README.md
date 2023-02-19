@@ -4,22 +4,20 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 
 - - - - 
 # 1. SharedPreferences #
-**Shared Preferences: is key-value pair storage**
+**Shared Preferences: are key-value pair storage**
 - Used to store user-specified configuration details, such as settings, and to keep the user logged in to the app.
 - Used to store small amount of data which doesn’t require any specific structure.
-
-[1] **Write the following inside the class you want to use sharedPreferences in it**
-
-    SINGLETON_SharedPref.init(getContext());
-[2] **Then use its functions directly by using class name**
-
-    SINGLETON_SharedPref.write("Mohamed Osama","Best Engineer");
-    SINGLETON_SharedPref.remove("Mohamed Osama");
-    
-and so on
-
+- Check its module Repo with example [here](https://github.com/mossssama/AndroidSharedPreferencesModule)
+- - - - 
+# 2. Notifications #
+**Notifications: are critical component of modern Android development**
+- Used to alert users to important events, messages, or updates within an app, even when the app is not currently in use.
+- Displayed in the status bar, on the lock screen, and as pop-up alerts.
+- Can be customized notifications to fit the needs of their app, including setting custom sounds, vibration patterns, and LED colors.
+- Can include images, text, and actions that allow users to quickly respond to the notification without having to open the app.
+- Check its module Repo with example [here](https://github.com/mossssama/AndroidNotificationModule)
 - - - -
-# 2. SQLiteDatabase #
+# 3. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -40,7 +38,7 @@ OR
     
 and so on
 - - - -
-# 3. RecyclerViewAdapter #
+# 4. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
@@ -130,7 +128,7 @@ OR
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
 - - - -
-# 4. APIs #
+# 5. APIs #
 ## PI : WebService provided by remote servers & developed by backEnd developers ##
 - They are set of methods/classes build in any scripting language & can be used without knowing their implementation
 - We needs agreement/protocol & key to use an API
@@ -206,7 +204,7 @@ We have two Android libraries supporting Asychronous code
     });
 
 - - - -
-# 5. Room Database #
+# 6. Room Database #
 **Room : is a library in JetPack library to provide an abstraction layer on SQLite to allow easily access to the database**
 
 [1] **Write the following dependencies in build.gradle**
