@@ -17,7 +17,15 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 - Can include images, text, and actions that allow users to quickly respond to the notification without having to open the app.
 - Check its module Repo with example [here](https://github.com/mossssama/AndroidNotificationModule)
 - - - -
-# 3. SQLiteDatabase #
+# 3. REST APIs & Retrofit #
+**REST APIs: type of web service that uses HTTP requests to GET, POST, PUT & DELETE data**
+**Retrofit: type-safe HTTP client for Android that makes it easy to consume RESTful web services by simplifing the process of sending and receiving data over the network by abstracting much of the complexity involved in making network requests.**
+- Retrofit allows us to define interfaces that specify the REST API endpoints they want to consume.
+- These interfaces can then be used to make network requests and receive responses while Retrofit takes care of the low-level details of the HTTP protocol.
+- It's often used in conjunction with other libraries such as Gson (a JSON serialization/deserialization library) and OkHttp (an HTTP client library) to create a powerful and flexible networking layer for Android applications.
+- Check its module Repo with example [here](https://github.com/mossssama/RetrofitModule)
+- - - -
+# 4. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -38,7 +46,7 @@ OR
     
 and so on
 - - - -
-# 4. RecyclerViewAdapter #
+# 5. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
@@ -128,83 +136,7 @@ OR
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
 - - - -
-# 5. APIs #
-## PI : WebService provided by remote servers & developed by backEnd developers ##
-- They are set of methods/classes build in any scripting language & can be used without knowing their implementation
-- We needs agreement/protocol & key to use an API
-## They are provided in different protocols & architectures as: ##
-- Protocols(TCP/IP): 1-HTTP 2-SMTP 3-FTP
-- Architectures: 1-REST 2-SOAP
-<br/><br/>
-- App -FTP/SMTP/HTTP-> Server (API Request)
-- App <-XML/HTML/JSON- Server (API Response)
-
-    |    vs    |    SOAP   |      REST     |
-    |:--------:|:---------:|:-------------:|
-    |  Request | HTTP/SMTP |      HTTP     |
-    | Response |    XML    | XML/HTML/JSON |
-    | Security |    High   |      Low      |
-## API response return with code (code & information in case of successful request) as the following ##
-
-    | Response Code |         Meaning        |
-    |---------------|------------------------|
-    |    100->199   | Informational response |
-    |    200->299   |   Successful response  |
-    |    300->399   |        Redirects       |
-    |    400->499   |      Client errors     |
-    |    500->599   |      Server errors     |
-## APIs request must support Asynchronous code to get red of application stuck during waiting for API response ##
-We have two Android libraries supporting Asychronous code
-- Volley: official documented library
-- Retrofit: part of JetPack Compose;libraries & best practices revelead by Google in 2019
-
-## prerequisites
-[1] **Write the following dependencies in build.gradle**
-
-    // API doc: Dependency to use Retrofit Library(Gives Asynchronous network request)
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-
-    // API doc: Dependency to use GSON as notation while converting from JSON->POJO
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-[2] **Write the following permissions in AndroidManifext.xml**
-
-    <!-- Api doc: Permissions to use Internet & -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-[3] **Paste the following after application tag in AndroidManifest.xml to allow using http along with https**
-    
-    android:usesCleartextTraffic="true"
-
-## In projects directory
-1. Put the SingletonRetrofitClient.java class in your project
-2. Put Api.java interface in your project
-3. Convert JSON response to POJO using [JSON->POJO](https://www.jsonschema2pojo.org/) & put the result java classes in your project
-
-4. **Put the following in the activity class you want to use an API in it**
-
-     Call<Verse> callConstantVerse = SingletonRetrofitClient.getInstance().getApi().getConstantVerse(); 
-    
-     callDynamicVerse.enqueue(new Callback<Verse>() {
-    
-        @Override
-        public void onResponse(Call<Verse> call, Response<Verse> response) {
-            Verse verse= response.body();
-            String verseString= verse.getData().getText();
-            String verseSurah= verse.getData().getSurah().getName();
-            tvAyah.setText(verseString);
-            tvSurah.setText(verseSurah);
-        }
-
-        @Override
-        public void onFailure(Call<Verse> call, Throwable t) {
-            tvAyah.setText("Ahhh");
-            Log.d("ahhhhhhhhhhhhhhhhhhh","");
-        }
-    
-    });
-
-- - - -
-# 6. Room Database #
+# 5. Room Database #
 **Room : is a library in JetPack library to provide an abstraction layer on SQLite to allow easily access to the database**
 
 [1] **Write the following dependencies in build.gradle**
