@@ -25,7 +25,15 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 - It's often used in conjunction with other libraries such as Gson (a JSON serialization/deserialization library) and OkHttp (an HTTP client library) to create a powerful and flexible networking layer for Android applications.
 - Check its module Repo with example [here](https://github.com/mossssama/RetrofitModule)
 - - - -
-# 4. SQLiteDatabase #
+# 4. Room Database #
+**Room : is a persistence library that's built on top of SQLite as it provids an abstraction layer over the database**
+- It reduces the amount of boilerplate code needed to manage SQLite databases
+- It provides compile-time checks to help prevent common errors.
+- It's easier to use than raw SQLite as in handling database transactions, handling complex queries and providing reliable, and consistent APIs.
+- Room has some extra features not available in SQLite, such as LiveData and RxJava, which make it easier to observe and update database data from UI components.
+- Check its module Repo with example [here](https://github.com/mossssama/RoomModule)
+
+# 5. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -46,7 +54,7 @@ OR
     
 and so on
 - - - -
-# 5. RecyclerViewAdapter #
+# 6. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
@@ -135,21 +143,6 @@ OR
     
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
-- - - -
-# 6. Room Database #
-**Room : is a library in JetPack library to provide an abstraction layer on SQLite to allow easily access to the database**
-
-[1] **Write the following dependencies in build.gradle**
-    
-    implementation 'androidx.room:room-runtime:2.4.3'
-    annotationProcessor 'androidx.room:room-compiler:2.4.3'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    annotationProcessor 'androidx.lifecycle:lifecycle-compiler:2.5.1'
-
-[2] Put the RoomDatabase directory in your project directory
--   **DAO** is interface containg the main queries to be applied on your database   
--   **RoomDB** is a class to build the Room layer on SQLite; it specifies mainDB + populating DB
--   **ModelClass** is a class representing a table in your Room Database
 - - - -
 # To Be Continued #
 
