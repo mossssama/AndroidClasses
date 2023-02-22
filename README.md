@@ -136,7 +136,7 @@ OR
     recyclerViewInit(arr,findViewById(R.id.rv),getApplicationContext(),this);
     
 - - - -
-# 5. Room Database #
+# 6. Room Database #
 **Room : is a library in JetPack library to provide an abstraction layer on SQLite to allow easily access to the database**
 
 [1] **Write the following dependencies in build.gradle**
