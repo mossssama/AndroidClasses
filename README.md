@@ -32,8 +32,22 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 - It's easier to use than raw SQLite as in handling database transactions, handling complex queries and providing reliable, and consistent APIs.
 - Room has some extra features not available in SQLite, such as LiveData and RxJava, which make it easier to observe and update database data from UI components.
 - Check its module Repo with example [here](https://github.com/mossssama/RoomModule)
-
-# 5. SQLiteDatabase #
+- - - - 
+# 5. DataBinding #
+**DataBinding: library allows us to directly bind the data objects to the UI components eliminating the boilerplate code required when using FindViewById**
+- DataBinding
+    - Generates optimized code at compile-time causing faster app performance
+    - Ensures that the app's UI & data objects are always in sync reducing errors occurring
+    - Separates the UI code from the business logic making the codebase easier to understand/maintain
+    - Facilitates testing the UI components of an app since the data objects can be easily mocked/injected into the UI components
+- FindViewById
+    - Performs runtime lookup for every view slowing down the app
+    - Leads to errors if a view isn't properly assigned or if its ID is incorrect.
+    - Intermingles UI code with the business logic which makes the code more difficult to read/maintain.
+    - Testing UI components with FindViewById is more difficult and time-consuming.
+- Check its module Repo with example [here](https://github.com/mossssama/DataBindingModule)
+- - - - 
+# 6. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -54,7 +68,7 @@ OR
     
 and so on
 - - - -
-# 6. RecyclerViewAdapter #
+# 7. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
