@@ -47,7 +47,15 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
     - Testing UI components with FindViewById is more difficult and time-consuming.
 - Check its module Repo with example [here](https://github.com/mossssama/DataBindingModule)
 - - - - 
-# 6. SQLiteDatabase #
+# 6. Firebase #
+**Firebase : backEnd as a service which allows building scalable apps with high quality**
+- Important Features
+    - **Realtime DB**: JSON tree based DB that enables us to create real-time applications that update instantly across all devices.
+    - **Cloud Firestore**: Document based DB that enables us to make more complex queries specially on large scaled DB
+    - **Authentication**: Enable us to authenticate users with popular authentication providers such as Email, Phone, Facebook, Twitter, Google and others
+- Check its module Repo with example [here](https://github.com/mossssama/FirebaseModule)
+- - - - 
+# 7. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -68,7 +76,7 @@ OR
     
 and so on
 - - - -
-# 7. RecyclerViewAdapter #
+# 8. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
