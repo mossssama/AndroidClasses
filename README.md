@@ -54,7 +54,22 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
     - **Cloud Firestore**: Document based DB that enables us to make more complex queries specially on large scaled DB
     - **Authentication**: Enable us to authenticate users with popular authentication providers such as Email, Phone, Facebook, Twitter, Google and others
 - Check its module Repo with example [here](https://github.com/mossssama/FirebaseModule)
+- - - -
+# 7. RXJava #
+**RXJava : Java-based reactive programming library helps in writing asynchronous, event-driven code in a more concise and composable way**
+- Important Features
+    - Reactive programming: Writing code in a reactive manner which means reacting to data changes in real-time helping in building responsive interactive UIs.
+    - Asynchronous programming: Performing asynchronous tasks (Network requests/DB operations/file I/O) without blocking the main thread preventing UI freezes.
+    - Composability: Offering a set of operators used to combine & transform data streams which makes it easy to create complex operations by composing simple ones.
+    - Error handling: Providing a powerful error-handling mechanism that can be used to gracefully handle errors and failures in reactive code.
+    - Backpressure: Supporting backpressure(Mechanism controlling data production/consumption rate) which prevents outOfMemory errors & ensures that the app runs smoothly even under heavy load.
+- Check its documentation [here](https://github.com/mossssama/RXJavaModule)    
+- Check its usage with Retrofit by example [here](https://github.com/mossssama/RetrofitModule)
+- Check its usage with Room by example [here](https://github.com/mossssama/RoomModule)
 - - - - 
+
+
+
 # 7. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
