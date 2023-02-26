@@ -67,10 +67,7 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 - Check its usage with Retrofit by example [here](https://github.com/mossssama/RetrofitModule)
 - Check its usage with Room by example [here](https://github.com/mossssama/RoomModule)
 - - - - 
-
-
-
-# 7. SQLiteDatabase #
+# 8. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -91,7 +88,7 @@ OR
     
 and so on
 - - - -
-# 8. RecyclerViewAdapter #
+# 9. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
