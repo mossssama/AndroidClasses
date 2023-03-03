@@ -67,7 +67,15 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
 - Check its usage with Retrofit by example [here](https://github.com/mossssama/RetrofitModule)
 - Check its usage with Room by example [here](https://github.com/mossssama/RoomModule)
 - - - - 
-# 8. SQLiteDatabase #
+# 8. AutoCompleteTextView with Footer #
+**AutoCompleteTextView : UI component in Android that allows users to input text & automatically suggests matching options based on the entered text**
+- Adding a footer to the AutoCompleteTextView allows displaying additional information or actions related to the suggestions shown in the dropdown list
+    - It can improve UX by reducing the time & effort required to enter data & providing quick access to related actions or information.
+    - It's commonly used in search features, form fields, and messaging applications, among other use cases
+    - It can be customized to match the app's design and behavior, such as adjusting the suggestion dropdown's width, font size, and animation
+- Check its module Repo with example [here](https://github.com/mossssama/AutoCompleteTextViewWithFooter)
+- - - - 
+# 9. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -88,7 +96,7 @@ OR
     
 and so on
 - - - -
-# 9. RecyclerViewAdapter #
+# 10. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
