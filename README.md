@@ -75,7 +75,20 @@ For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
     - It can be customized to match the app's design and behavior, such as adjusting the suggestion dropdown's width, font size, and animation
 - Check its module Repo with example [here](https://github.com/mossssama/AutoCompleteTextViewWithFooter)
 - - - - 
-# 9. SQLiteDatabase #
+# 9. AlertDialog #
+**AlertDialog : dialog box that pops up on the screen to display information or prompt the user for a response**
+- Usage
+    - Displays important information such as an error message or confirmation dialog.
+    - Prompts the user for i/p such as selecting an option or entering text.
+    - Displays notifications or alerts to the user.
+- Types
+    - Standard AlertDialog: a simple dialog box with a title, message, and buttons. Check its repoe [here](https://github.com/mossssama/StandardAlertDialog)
+    - List AlertDialog: displays a list of items for the user to select from.
+    - Single Choice AlertDialog: presents the user with a list of options, allowing them to select only one.
+    - Multi-Choice AlertDialog: similar to the single choice dialog, but allows the user to select multiple options.
+    - Custom AlertDialog: provides the ability to fully customize the dialog box. Check its repo [here](https://github.com/mossssama/CustomAlertDialog)
+- - - - 
+# 10. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -96,7 +109,7 @@ OR
     
 and so on
 - - - -
-# 10. RecyclerViewAdapter #
+# 11. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
