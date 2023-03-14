@@ -1,13 +1,11 @@
 AndroidJavaClasses<a name="TOP"></a>
 ===================
-For [Kotlin Repo](https://github.com/mossssama/AndroidKotlinClasses)
-
 - - - - 
 # 1. SharedPreferences #
 **Shared Preferences: are key-value pair storage**
 - Used to store user-specified configuration details, such as settings, and to keep the user logged in to the app.
 - Used to store small amount of data which doesn’t require any specific structure.
-- Check its module Repo with example [here](https://github.com/mossssama/AndroidSharedPreferencesModule)
+- Check its module Repo with example In [Java](https://github.com/mossssama/AndroidSharedPreferencesModule) & [Kotlin](https://github.com/mossssama/AndroidKtSharedPreferencesModule)
 - - - - 
 # 2. Notifications #
 **Notifications: are critical component of modern Android development**
