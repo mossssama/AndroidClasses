@@ -1,4 +1,4 @@
-AndroidJavaClasses<a name="TOP"></a>
+AndroidClasses<a name="TOP"></a>
 ===================
 - - - - 
 # 1. SharedPreferences #
