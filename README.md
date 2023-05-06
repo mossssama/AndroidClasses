@@ -3,6 +3,11 @@ AndroidClasses<a name="TOP"></a>
 - - - - 
 # 1. SharedPreferences #
 **Shared Preferences: are key-value pair storage**
+
+| Feature |         **HashTable**         |                     **Map**                    |           **Dictionary**         | **SharedPrefs**      |
+|---------|:-----------------------------:|:----------------------------------------------:|:--------------------------------:|----------------------|
+| Type    | Data Structure in Programming | Collections in Java, Kotlin, Dart, Go, Js, C++ | Collections in Swift, Python, C# | Android Developement |
+
 - Used to store user-specified configuration details, such as settings, and to keep the user logged in to the app.
 - Used to store small amount of data which doesn’t require any specific structure.
 - Check its module Repo with example In [Java](https://github.com/mossssama/AndroidSharedPreferencesModule) & [Kotlin](https://github.com/mossssama/-AndroidKtSharedPreferencesModule)
