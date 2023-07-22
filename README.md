@@ -12,7 +12,16 @@ AndroidClasses<a name="TOP"></a>
 - Used to store small amount of data which doesn’t require any specific structure.
 - Check its module Repo with example In [Java](https://github.com/mossssama/AndroidSharedPreferencesModule) & [Kotlin](https://github.com/mossssama/-AndroidKtSharedPreferencesModule)
 - - - - 
-# 2. Notifications #
+# 2. Realm Database #
+**Realm : is a NoSQL mobile database engine designed for easy data management**
+- It offers a simple and efficient data access API without relying on traditional SQL or SQLite.
+- It eliminates the need for boilerplate code, simplifying database operations in mobile applications.
+- Ot provides compile-time checks to prevent common data-related errors.
+- It handle database transactions, complex queries, and reliable APIs become more straightforward with Realm.
+- Realm has some features like LiveData and RxJava facilitate seamless observation and updates of database data from UI components.
+- Check its module Repo with example [Java](https://github.com/mossssama/RealmAndroidJava) & [Kotlin](https://github.com/mossssama/RealmAndroidKotlin)
+- - - - 
+# 3. Notifications #
 **Notifications: are critical component of modern Android development**
 - Used to alert users to important events, messages, or updates within an app, even when the app is not currently in use.
 - Displayed in the status bar, on the lock screen, and as pop-up alerts.
@@ -20,7 +29,7 @@ AndroidClasses<a name="TOP"></a>
 - Can include images, text, and actions that allow users to quickly respond to the notification without having to open the app.
 - Check its module Repo with example [here](https://github.com/mossssama/AndroidNotificationModule)
 - - - -
-# 3. REST APIs & Retrofit #
+# 4. REST APIs & Retrofit #
 **REST APIs: type of web service that uses HTTP requests to GET, POST, PUT & DELETE data**
 **Retrofit: type-safe HTTP client for Android that makes it easy to consume RESTful web services by simplifing the process of sending and receiving data over the network by abstracting much of the complexity involved in making network requests.**
 - Retrofit allows us to define interfaces that specify the REST API endpoints they want to consume.
@@ -28,7 +37,7 @@ AndroidClasses<a name="TOP"></a>
 - It's often used in conjunction with other libraries such as Gson (a JSON serialization/deserialization library) and OkHttp (an HTTP client library) to create a powerful and flexible networking layer for Android applications.
 - Check its module Repo with example [here](https://github.com/mossssama/RetrofitModule)
 - - - -
-# 4. Room Database #
+# 5. Room Database #
 **Room : is a persistence library that's built on top of SQLite as it provids an abstraction layer over the database**
 - It reduces the amount of boilerplate code needed to manage SQLite databases
 - It provides compile-time checks to help prevent common errors.
@@ -36,7 +45,7 @@ AndroidClasses<a name="TOP"></a>
 - Room has some extra features not available in SQLite, such as LiveData and RxJava, which make it easier to observe and update database data from UI components.
 - Check its module Repo with example [here](https://github.com/mossssama/RoomModule)
 - - - - 
-# 5. DataBinding #
+# 6. DataBinding #
 **DataBinding: library allows us to directly bind the data objects to the UI components eliminating the boilerplate code required when using FindViewById**
 - DataBinding
     - Generates optimized code at compile-time causing faster app performance
@@ -50,7 +59,7 @@ AndroidClasses<a name="TOP"></a>
     - Testing UI components with FindViewById is more difficult and time-consuming.
 - Check its module Repo with example [here](https://github.com/mossssama/DataBindingModule)
 - - - - 
-# 6. Firebase #
+# 7. Firebase #
 **Firebase : backEnd as a service which allows building scalable apps with high quality**
 - Important Features
     - **Realtime DB**: JSON tree based DB that enables us to create real-time applications that update instantly across all devices.
@@ -58,7 +67,7 @@ AndroidClasses<a name="TOP"></a>
     - **Authentication**: Enable us to authenticate users with popular authentication providers such as Email, Phone, Facebook, Twitter, Google and others
 - Check its module Repo with example [here](https://github.com/mossssama/FirebaseModule)
 - - - -
-# 7. RXJava #
+# 8. RXJava #
 **RXJava : Java-based reactive programming library helps in writing asynchronous, event-driven code in a more concise and composable way**
 - Important Features
     - Reactive programming: Writing code in a reactive manner which means reacting to data changes in real-time helping in building responsive interactive UIs.
@@ -70,7 +79,7 @@ AndroidClasses<a name="TOP"></a>
 - Check its usage with Retrofit by example [here](https://github.com/mossssama/RetrofitModule)
 - Check its usage with Room by example [here](https://github.com/mossssama/RoomModule)
 - - - - 
-# 8. AutoCompleteTextView with Footer #
+# 9. AutoCompleteTextView with Footer #
 **AutoCompleteTextView : UI component in Android that allows users to input text & automatically suggests matching options based on the entered text**
 - Adding a footer to the AutoCompleteTextView allows displaying additional information or actions related to the suggestions shown in the dropdown list
     - It can improve UX by reducing the time & effort required to enter data & providing quick access to related actions or information.
@@ -78,7 +87,7 @@ AndroidClasses<a name="TOP"></a>
     - It can be customized to match the app's design and behavior, such as adjusting the suggestion dropdown's width, font size, and animation
 - Check its module Repo with example [here](https://github.com/mossssama/AutoCompleteTextViewWithFooter)
 - - - - 
-# 9. AlertDialog #
+# 10. AlertDialog #
 **AlertDialog : dialog box that pops up on the screen to display information or prompt the user for a response**
 - Usage
     - Displays important information such as an error message or confirmation dialog.
@@ -91,7 +100,7 @@ AndroidClasses<a name="TOP"></a>
     - Multi-Choice AlertDialog: similar to the single choice dialog, but allows the user to select multiple options.
     - Custom AlertDialog: provides the ability to fully customize the dialog box. Check its repo [here](https://github.com/mossssama/CustomAlertDialog)
 - - - - 
-# 10. SQLiteDatabase #
+# 11. SQLiteDatabase #
 **SQLite : is database used to store data localy & permenantly using CRUD operations in SQL language**
 
 [1] **Write the following inside the class you want to use SQLiteDatabase in it**
@@ -112,7 +121,7 @@ OR
     
 and so on
 - - - -
-# 11. RecyclerViewAdapter #
+# 12. RecyclerViewAdapter #
 **RecyclerView : ViewGroup contains views corresponding to our data**
 **RecyclerViewAdapter : Adapter binds data from dataSet to Views that are displayed inside RecyclerView 
 
